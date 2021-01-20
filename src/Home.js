@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 
 const Home = () => {
@@ -13,6 +13,10 @@ const Home = () => {
     const tempBlogs = blogs.filter( (blog) => blog.id !== id );
     setBlogs(tempBlogs);
   }
+
+  useEffect( () => {
+    console.log('Use effect ran');
+  }, []);
 
   return (  
     <div className="home">
