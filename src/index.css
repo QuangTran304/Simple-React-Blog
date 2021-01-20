@@ -33,3 +33,25 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.blog-preview:hover {
+  box-shadow: 0 0 12px 3px rgba(0,0,0,0.1);
+  transform: scale(1.02);
+  transition: 0.25s ease-in-out;
+}
+.blog-preview h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b42f2;
+  margin-bottom: 8px;
+}
+.blog-preview p {
+  font-size: 14px;
+}
