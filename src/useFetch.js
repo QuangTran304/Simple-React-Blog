@@ -7,8 +7,11 @@ const useFetch = (url) => {
   const [error, setError] = useState(null);
   
   useEffect( () => {
+    const abortCont = new AbortController();
+
+
     setTimeout( () => {   // Used only for this project to mimic the time load in the real world
-      fetch(url)
+      fetch(url, { signal: abortCont.signal })
       .then(res => {
         if (!res.ok) {
           throw Error('Could not fetch the data from server');
@@ -21,11 +24,18 @@ const useFetch = (url) => {
         setError(null);
       })
       .catch(err => {     // If the error happened, we don't want to show the word "Loading..."
-        setIsLoading(false);
-        setError(err.message);
+        if (err.name === 'AbortError') {
+          console.log('Fetch aborted;')
+        } else {
+          setIsLoading(false);
+          setError(err.message);
+        }
       });
     }, 1000);   // Wait for an additional of 1 second
-  }, []);
+
+    return () => abortCont.abort();
+
+  }, [url]);
 
   return { data, isLoading, error }
 }

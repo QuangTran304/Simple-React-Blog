@@ -55,3 +55,6 @@
 .blog-preview p {
   font-size: 14px;
 }
+.blog-preview a {
+  text-decoration: none;
+}
