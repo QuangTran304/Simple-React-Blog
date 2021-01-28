@@ -9,7 +9,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #e9e9e9;
 }
@@ -29,7 +29,7 @@
   color: #4b42f2;
 }
 .content {
-  max-width: 800px;
+  max-width: 500px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -57,4 +57,14 @@
 }
 .blog-preview a {
   text-decoration: none;
+}
+
+.blog-details h2 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+.blog-details div {
+  margin: 35px 0;
+  font-size: 14px;
+  line-height: 1.8em;
 }
