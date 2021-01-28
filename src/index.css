@@ -126,3 +126,13 @@
   transform: translateY(-3px);
   transition: 0.25s ease-in-out;
 }
+
+.not-found {
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 60px;
+}
+.not-found p {
+  margin: 25px 0;
+}
