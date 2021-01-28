@@ -24,10 +24,19 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 8px 20px;
+  border-radius: 10px;
 }
 .navbar a:hover {
   color: #4b42f2;
 }
+.navbar .links a:hover {
+  color: white;
+  background: #4b42f2;
+  box-shadow: 0 0 12px 3px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  transition: 0.25s ease-in-out;
+}
+
 .content {
   max-width: 500px;
   margin: 40px auto;
@@ -87,6 +96,10 @@
   transition: 0.25s ease-in-out;
 }
 
+.blog-list h2 {
+  margin-bottom: 20px;
+}
+
 .create {
   max-width: 400px;
   margin: 0 auto;
@@ -109,7 +122,10 @@
   box-sizing: border-box;
   display: block;
 }
-.create button {
+.create textarea {
+  height: 30vh;
+}
+.create button, .btn {
   background: rgb(17, 19, 77);
   color: white;
   border: 0;
