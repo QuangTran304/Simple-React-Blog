@@ -68,3 +68,43 @@
   font-size: 14px;
   line-height: 1.8em;
 }
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  color: rgb(17, 19, 77);
+  margin-bottom: 50px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(196, 196, 196);
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: rgb(17, 19, 77);
+  color: white;
+  border: 0;
+  padding: 8px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800px;
+  margin-top: 25px;
+}
+.create button:hover {
+  background: #4b42f2;
+  box-shadow: 0 0 12px 3px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  transition: 0.25s ease-in-out;
+}
